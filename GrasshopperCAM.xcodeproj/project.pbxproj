@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE4EBFD62680E3D20068EC22 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4EBFD52680E3D20068EC22 /* MenuViewController.swift */; };
+		AE4EBFE7268750A70068EC22 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4EBFE6268750A70068EC22 /* MenuItem.swift */; };
+		AE4EBFED26875E9B0068EC22 /* ToggleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4EBFEB26875E9B0068EC22 /* ToggleCollectionViewCell.swift */; };
+		AE4EBFEE26875E9B0068EC22 /* ToggleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4EBFEC26875E9B0068EC22 /* ToggleCollectionViewCell.xib */; };
 		AE72F560267E4F2D006681A0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AE72F55F267E4F2D006681A0 /* RxCocoa */; };
 		AE72F562267E4F2D006681A0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AE72F561267E4F2D006681A0 /* RxSwift */; };
 		AE72F564267E4F2D006681A0 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = AE72F563267E4F2D006681A0 /* RxRelay */; };
@@ -14,18 +18,22 @@
 		F3CFD66D267E46C700F34E7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFD66C267E46C700F34E7F /* AppDelegate.swift */; };
 		F3CFD66F267E46C700F34E7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFD66E267E46C700F34E7F /* SceneDelegate.swift */; };
 		F3CFD671267E46C700F34E7F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFD670267E46C700F34E7F /* CameraViewController.swift */; };
-		F3CFD674267E46C700F34E7F /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD672267E46C700F34E7F /* Camera.storyboard */; };
+		F3CFD674267E46C700F34E7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD672267E46C700F34E7F /* Main.storyboard */; };
 		F3CFD676267E46C800F34E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD675267E46C800F34E7F /* Assets.xcassets */; };
 		F3CFD679267E46C800F34E7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD677267E46C800F34E7F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE4EBFD52680E3D20068EC22 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		AE4EBFE6268750A70068EC22 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		AE4EBFEB26875E9B0068EC22 /* ToggleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE4EBFEC26875E9B0068EC22 /* ToggleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToggleCollectionViewCell.xib; sourceTree = "<group>"; };
 		AE72F56D267E588E006681A0 /* SDMiSaeng.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDMiSaeng.ttf; sourceTree = "<group>"; };
 		F3CFD669267E46C700F34E7F /* GrasshopperCAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrasshopperCAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CFD66C267E46C700F34E7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3CFD66E267E46C700F34E7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F3CFD670267E46C700F34E7F /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		F3CFD673267E46C700F34E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Camera.storyboard; sourceTree = "<group>"; };
+		F3CFD673267E46C700F34E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3CFD675267E46C800F34E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3CFD678267E46C800F34E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3CFD67A267E46C800F34E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,8 +74,12 @@
 		AE72F569267E4FB8006681A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F3CFD672267E46C700F34E7F /* Camera.storyboard */,
+				F3CFD672267E46C700F34E7F /* Main.storyboard */,
 				F3CFD670267E46C700F34E7F /* CameraViewController.swift */,
+				AE4EBFD52680E3D20068EC22 /* MenuViewController.swift */,
+				AE4EBFE6268750A70068EC22 /* MenuItem.swift */,
+				AE4EBFEB26875E9B0068EC22 /* ToggleCollectionViewCell.swift */,
+				AE4EBFEC26875E9B0068EC22 /* ToggleCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,7 +180,8 @@
 				AE72F56E267E588E006681A0 /* SDMiSaeng.ttf in Resources */,
 				F3CFD679267E46C800F34E7F /* LaunchScreen.storyboard in Resources */,
 				F3CFD676267E46C800F34E7F /* Assets.xcassets in Resources */,
-				F3CFD674267E46C700F34E7F /* Camera.storyboard in Resources */,
+				F3CFD674267E46C700F34E7F /* Main.storyboard in Resources */,
+				AE4EBFEE26875E9B0068EC22 /* ToggleCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,21 +192,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4EBFED26875E9B0068EC22 /* ToggleCollectionViewCell.swift in Sources */,
+				AE4EBFE7268750A70068EC22 /* MenuItem.swift in Sources */,
 				F3CFD671267E46C700F34E7F /* CameraViewController.swift in Sources */,
 				F3CFD66D267E46C700F34E7F /* AppDelegate.swift in Sources */,
 				F3CFD66F267E46C700F34E7F /* SceneDelegate.swift in Sources */,
+				AE4EBFD62680E3D20068EC22 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F3CFD672267E46C700F34E7F /* Camera.storyboard */ = {
+		F3CFD672267E46C700F34E7F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F3CFD673267E46C700F34E7F /* Base */,
 			);
-			name = Camera.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		F3CFD677267E46C800F34E7F /* LaunchScreen.storyboard */ = {
@@ -331,7 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JEGFD62GB;
 				INFOPLIST_FILE = "GrasshopperCAM/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,7 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JEGFD62GB;
 				INFOPLIST_FILE = "GrasshopperCAM/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
