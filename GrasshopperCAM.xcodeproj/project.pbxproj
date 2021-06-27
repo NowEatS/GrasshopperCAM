@@ -15,13 +15,53 @@
 		AE72F562267E4F2D006681A0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AE72F561267E4F2D006681A0 /* RxSwift */; };
 		AE72F564267E4F2D006681A0 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = AE72F563267E4F2D006681A0 /* RxRelay */; };
 		AE72F56E267E588E006681A0 /* SDMiSaeng.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE72F56D267E588E006681A0 /* SDMiSaeng.ttf */; };
+		F3AD6EFE268861C000A3CEAD /* GrasshopperCAMEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AD6EFD268861C000A3CEAD /* GrasshopperCAMEntryView.swift */; };
+		F3AD6EFF2688A17800A3CEAD /* GrasshopperCAMEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AD6EFD268861C000A3CEAD /* GrasshopperCAMEntryView.swift */; };
+		F3AD6F002688ADFB00A3CEAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD675267E46C800F34E7F /* Assets.xcassets */; };
 		F3CFD66D267E46C700F34E7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFD66C267E46C700F34E7F /* AppDelegate.swift */; };
 		F3CFD66F267E46C700F34E7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFD66E267E46C700F34E7F /* SceneDelegate.swift */; };
 		F3CFD671267E46C700F34E7F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFD670267E46C700F34E7F /* CameraViewController.swift */; };
 		F3CFD674267E46C700F34E7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD672267E46C700F34E7F /* Main.storyboard */; };
 		F3CFD676267E46C800F34E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD675267E46C800F34E7F /* Assets.xcassets */; };
 		F3CFD679267E46C800F34E7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD677267E46C800F34E7F /* LaunchScreen.storyboard */; };
+		F3CFD6A1267E6C2E00F34E7F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CFD6A0267E6C2E00F34E7F /* WidgetKit.framework */; };
+		F3CFD6A3267E6C2E00F34E7F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CFD6A2267E6C2E00F34E7F /* SwiftUI.framework */; };
+		F3CFD6A6267E6C2E00F34E7F /* GrasshopperCAMWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CFD6A5267E6C2E00F34E7F /* GrasshopperCAMWidget.swift */; };
+		F3CFD6A9267E6C2F00F34E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CFD6A8267E6C2F00F34E7F /* Assets.xcassets */; };
+		F3CFD6AF267E6C2F00F34E7F /* GrasshopperCAMWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F3CFD69E267E6C2E00F34E7F /* GrasshopperCAMWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3E4B73326839BA000BED89A /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E4B73226839BA000BED89A /* UserDefaults+Extensions.swift */; };
+		F3E4B73626839D8200BED89A /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E4B73526839D8200BED89A /* UserDefaultsKeys.swift */; };
+		F3E4B73726839DE600BED89A /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E4B73526839D8200BED89A /* UserDefaultsKeys.swift */; };
+		F3E4B73826839DE900BED89A /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E4B73226839BA000BED89A /* UserDefaults+Extensions.swift */; };
+		F3E4B73C26839F5F00BED89A /* GrasshopperCAMEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E4B73B26839F5F00BED89A /* GrasshopperCAMEntry.swift */; };
+		F3E4B73D26839F5F00BED89A /* GrasshopperCAMEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E4B73B26839F5F00BED89A /* GrasshopperCAMEntry.swift */; };
+		F3E4B73F26839F7500BED89A /* GrasshopperCAMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E4B73E26839F7500BED89A /* GrasshopperCAMProvider.swift */; };
+		F3E4B74026839F7500BED89A /* GrasshopperCAMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E4B73E26839F7500BED89A /* GrasshopperCAMProvider.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3CFD6AD267E6C2F00F34E7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3CFD661267E46C700F34E7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3CFD69D267E6C2E00F34E7F;
+			remoteInfo = GrasshopperCAMWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3CFD6B0267E6C2F00F34E7F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F3CFD6AF267E6C2F00F34E7F /* GrasshopperCAMWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AE4EBFD52680E3D20068EC22 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +69,7 @@
 		AE4EBFEB26875E9B0068EC22 /* ToggleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleCollectionViewCell.swift; sourceTree = "<group>"; };
 		AE4EBFEC26875E9B0068EC22 /* ToggleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToggleCollectionViewCell.xib; sourceTree = "<group>"; };
 		AE72F56D267E588E006681A0 /* SDMiSaeng.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SDMiSaeng.ttf; sourceTree = "<group>"; };
+		F3AD6EFD268861C000A3CEAD /* GrasshopperCAMEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrasshopperCAMEntryView.swift; sourceTree = "<group>"; };
 		F3CFD669267E46C700F34E7F /* GrasshopperCAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrasshopperCAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CFD66C267E46C700F34E7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3CFD66E267E46C700F34E7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +78,18 @@
 		F3CFD675267E46C800F34E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3CFD678267E46C800F34E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3CFD67A267E46C800F34E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3CFD69E267E6C2E00F34E7F /* GrasshopperCAMWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GrasshopperCAMWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CFD6A0267E6C2E00F34E7F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F3CFD6A2267E6C2E00F34E7F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		F3CFD6A5267E6C2E00F34E7F /* GrasshopperCAMWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrasshopperCAMWidget.swift; sourceTree = "<group>"; };
+		F3CFD6A8267E6C2F00F34E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3CFD6AA267E6C2F00F34E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3E4B72F26839A7800BED89A /* GrasshopperCAM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GrasshopperCAM.entitlements; sourceTree = "<group>"; };
+		F3E4B73026839AE400BED89A /* GrasshopperCAMWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GrasshopperCAMWidgetExtension.entitlements; sourceTree = "<group>"; };
+		F3E4B73226839BA000BED89A /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		F3E4B73526839D8200BED89A /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		F3E4B73B26839F5F00BED89A /* GrasshopperCAMEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrasshopperCAMEntry.swift; sourceTree = "<group>"; };
+		F3E4B73E26839F7500BED89A /* GrasshopperCAMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrasshopperCAMProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +100,15 @@
 				AE72F564267E4F2D006681A0 /* RxRelay in Frameworks */,
 				AE72F562267E4F2D006681A0 /* RxSwift in Frameworks */,
 				AE72F560267E4F2D006681A0 /* RxCocoa in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3CFD69B267E6C2E00F34E7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CFD6A3267E6C2E00F34E7F /* SwiftUI.framework in Frameworks */,
+				F3CFD6A1267E6C2E00F34E7F /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +149,10 @@
 		F3CFD660267E46C700F34E7F = {
 			isa = PBXGroup;
 			children = (
+				F3E4B73026839AE400BED89A /* GrasshopperCAMWidgetExtension.entitlements */,
 				F3CFD66B267E46C700F34E7F /* GrasshopperCAM */,
+				F3CFD6A4267E6C2E00F34E7F /* GrasshopperCAMWidget */,
+				F3CFD69F267E6C2E00F34E7F /* Frameworks */,
 				F3CFD66A267E46C700F34E7F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				F3CFD669267E46C700F34E7F /* GrasshopperCAM.app */,
+				F3CFD69E267E6C2E00F34E7F /* GrasshopperCAMWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +169,9 @@
 		F3CFD66B267E46C700F34E7F /* GrasshopperCAM */ = {
 			isa = PBXGroup;
 			children = (
+				F3E4B72F26839A7800BED89A /* GrasshopperCAM.entitlements */,
+				F3E4B73126839B8700BED89A /* Extensions */,
+				F3E4B73426839D6800BED89A /* Models */,
 				AE72F569267E4FB8006681A0 /* View */,
 				AE72F568267E4F8B006681A0 /* Application */,
 				AE72F567267E4F80006681A0 /* Supporting Files */,
@@ -110,6 +179,60 @@
 				F3CFD677267E46C800F34E7F /* LaunchScreen.storyboard */,
 			);
 			path = GrasshopperCAM;
+			sourceTree = "<group>";
+		};
+		F3CFD69F267E6C2E00F34E7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFD6A0267E6C2E00F34E7F /* WidgetKit.framework */,
+				F3CFD6A2267E6C2E00F34E7F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3CFD6A4267E6C2E00F34E7F /* GrasshopperCAMWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFD6A5267E6C2E00F34E7F /* GrasshopperCAMWidget.swift */,
+				F3E4B73926839E6E00BED89A /* Provider */,
+				F3E4B73A26839EA000BED89A /* ViewContent */,
+				F3CFD6A8267E6C2F00F34E7F /* Assets.xcassets */,
+				F3CFD6AA267E6C2F00F34E7F /* Info.plist */,
+			);
+			path = GrasshopperCAMWidget;
+			sourceTree = "<group>";
+		};
+		F3E4B73126839B8700BED89A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3E4B73226839BA000BED89A /* UserDefaults+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3E4B73426839D6800BED89A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3E4B73526839D8200BED89A /* UserDefaultsKeys.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3E4B73926839E6E00BED89A /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				F3E4B73B26839F5F00BED89A /* GrasshopperCAMEntry.swift */,
+				F3E4B73E26839F7500BED89A /* GrasshopperCAMProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		F3E4B73A26839EA000BED89A /* ViewContent */ = {
+			isa = PBXGroup;
+			children = (
+				F3AD6EFD268861C000A3CEAD /* GrasshopperCAMEntryView.swift */,
+			);
+			path = ViewContent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,10 +245,12 @@
 				F3CFD665267E46C700F34E7F /* Sources */,
 				F3CFD666267E46C700F34E7F /* Frameworks */,
 				F3CFD667267E46C700F34E7F /* Resources */,
+				F3CFD6B0267E6C2F00F34E7F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F3CFD6AE267E6C2F00F34E7F /* PBXTargetDependency */,
 			);
 			name = GrasshopperCAM;
 			packageProductDependencies = (
@@ -137,6 +262,23 @@
 			productReference = F3CFD669267E46C700F34E7F /* GrasshopperCAM.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F3CFD69D267E6C2E00F34E7F /* GrasshopperCAMWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3CFD6B3267E6C2F00F34E7F /* Build configuration list for PBXNativeTarget "GrasshopperCAMWidgetExtension" */;
+			buildPhases = (
+				F3CFD69A267E6C2E00F34E7F /* Sources */,
+				F3CFD69B267E6C2E00F34E7F /* Frameworks */,
+				F3CFD69C267E6C2E00F34E7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrasshopperCAMWidgetExtension;
+			productName = GrasshopperCAMWidgetExtension;
+			productReference = F3CFD69E267E6C2E00F34E7F /* GrasshopperCAMWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -147,6 +289,9 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					F3CFD668267E46C700F34E7F = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					F3CFD69D267E6C2E00F34E7F = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -168,6 +313,7 @@
 			projectRoot = "";
 			targets = (
 				F3CFD668267E46C700F34E7F /* GrasshopperCAM */,
+				F3CFD69D267E6C2E00F34E7F /* GrasshopperCAMWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +331,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3CFD69C267E6C2E00F34E7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AD6F002688ADFB00A3CEAD /* Assets.xcassets in Resources */,
+				F3CFD6A9267E6C2F00F34E7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,14 +349,40 @@
 			files = (
 				AE4EBFED26875E9B0068EC22 /* ToggleCollectionViewCell.swift in Sources */,
 				AE4EBFE7268750A70068EC22 /* MenuItem.swift in Sources */,
+				F3AD6EFE268861C000A3CEAD /* GrasshopperCAMEntryView.swift in Sources */,
 				F3CFD671267E46C700F34E7F /* CameraViewController.swift in Sources */,
+				F3E4B73C26839F5F00BED89A /* GrasshopperCAMEntry.swift in Sources */,
+				F3E4B73F26839F7500BED89A /* GrasshopperCAMProvider.swift in Sources */,
 				F3CFD66D267E46C700F34E7F /* AppDelegate.swift in Sources */,
+				F3E4B73326839BA000BED89A /* UserDefaults+Extensions.swift in Sources */,
+				F3E4B73626839D8200BED89A /* UserDefaultsKeys.swift in Sources */,
 				F3CFD66F267E46C700F34E7F /* SceneDelegate.swift in Sources */,
 				AE4EBFD62680E3D20068EC22 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3CFD69A267E6C2E00F34E7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AD6EFF2688A17800A3CEAD /* GrasshopperCAMEntryView.swift in Sources */,
+				F3CFD6A6267E6C2E00F34E7F /* GrasshopperCAMWidget.swift in Sources */,
+				F3E4B74026839F7500BED89A /* GrasshopperCAMProvider.swift in Sources */,
+				F3E4B73D26839F5F00BED89A /* GrasshopperCAMEntry.swift in Sources */,
+				F3E4B73726839DE600BED89A /* UserDefaultsKeys.swift in Sources */,
+				F3E4B73826839DE900BED89A /* UserDefaults+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3CFD6AE267E6C2F00F34E7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3CFD69D267E6C2E00F34E7F /* GrasshopperCAMWidgetExtension */;
+			targetProxy = F3CFD6AD267E6C2F00F34E7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F3CFD672267E46C700F34E7F /* Main.storyboard */ = {
@@ -342,17 +523,19 @@
 		F3CFD67E267E46C800F34E7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GrasshopperCAM/GrasshopperCAM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3JEGFD62GB;
+				DEVELOPMENT_TEAM = T73K8XHDL7;
 				INFOPLIST_FILE = "GrasshopperCAM/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yookie.grasshopperCam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noweat.grasshopperCam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -362,18 +545,64 @@
 		F3CFD67F267E46C800F34E7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GrasshopperCAM/GrasshopperCAM.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3JEGFD62GB;
+				DEVELOPMENT_TEAM = T73K8XHDL7;
 				INFOPLIST_FILE = "GrasshopperCAM/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yookie.grasshopperCam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noweat.grasshopperCam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3CFD6B1267E6C2F00F34E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = GrasshopperCAMWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T73K8XHDL7;
+				INFOPLIST_FILE = GrasshopperCAMWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noweat.grasshopperCam.GrasshopperCAMWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3CFD6B2267E6C2F00F34E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = GrasshopperCAMWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T73K8XHDL7;
+				INFOPLIST_FILE = GrasshopperCAMWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.noweat.grasshopperCam.GrasshopperCAMWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -396,6 +625,15 @@
 			buildConfigurations = (
 				F3CFD67E267E46C800F34E7F /* Debug */,
 				F3CFD67F267E46C800F34E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3CFD6B3267E6C2F00F34E7F /* Build configuration list for PBXNativeTarget "GrasshopperCAMWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CFD6B1267E6C2F00F34E7F /* Debug */,
+				F3CFD6B2267E6C2F00F34E7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

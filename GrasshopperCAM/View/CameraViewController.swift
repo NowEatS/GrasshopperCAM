@@ -2,6 +2,7 @@ import UIKit
 import AVFoundation
 import RxSwift
 import RxCocoa
+import WidgetKit
 
 final class CameraViewController: UIViewController {
 
@@ -90,7 +91,7 @@ final class CameraViewController: UIViewController {
                 previewLayer.videoGravity = .resizeAspectFill
                 previewLayer.session = captureSession
                 
-                session.startRunning()
+                captureSession.startRunning()
                 
                 self.session = captureSession
             }
@@ -120,6 +121,9 @@ extension CameraViewController: AVCapturePhotoCaptureDelegate {
         imageView.frame = cameraView.bounds
         imageView.clipsToBounds = true
         cameraView.addSubview(imageView)
+        
+        UserDefaults.shared.setValue(data, forKey: GHUserDefaultsKeys.latestImage.rawValue)
+        WidgetCenter.shared.reloadAllTimelines()
     }
     
 }
