@@ -27,7 +27,8 @@ struct GrasshopperCAMWidget_Previews: PreviewProvider {
     static var previews: some View {
         GrasshopperCAMEntryView(entry: GrasshopperCAMEntry(date: Date(), imageData: Data()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
-//        GrasshopperCAMWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
-//            .previewContext(WidgetPreviewContext(family: .systemLarge))
+        
+        GrasshopperCAMEntryView(entry: GrasshopperCAMEntry(date: Date(), imageData: Data()))
+            .previewContext(WidgetPreviewContext(family: .systemLarge))
     }
 }

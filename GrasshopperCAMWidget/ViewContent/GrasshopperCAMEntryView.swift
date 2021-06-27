@@ -15,21 +15,15 @@ struct GrasshopperCAMEntryView: View {
     
     @ViewBuilder
     var body: some View {
-        ZStack(alignment: .center) {
-            Color.white
-            
-            ZStack {
-                if let image = UIImage(data: entry.imageData) {
-                    Image(uiImage: image)
-                        .resizable()
-                        .cornerRadius(10.0)
-                } else {
-                    Image("베짱이")
-                        .resizable()
-                        .cornerRadius(10.0)
-                }
-            }
-            .padding()
+        if let image = UIImage(data: entry.imageData) {
+            Image(uiImage: image)
+                .resizable()
+                .scaledToFill()
+                .cornerRadius(10.0)
+        } else {
+            Image("베짱이")
+                .resizable()
+                .cornerRadius(10.0)
         }
     }
 }
