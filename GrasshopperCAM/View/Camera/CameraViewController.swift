@@ -26,7 +26,6 @@ final class CameraViewController: UIViewController {
         super.viewDidLoad()
         
         previewImageView.layer.cornerRadius = Constant.GHLayer.cornerRadius
-        cameraView.layer.addSublayer(previewLayer)
         
         bind()
         checkCameraPermissions()
@@ -106,6 +105,11 @@ final class CameraViewController: UIViewController {
                 captureSession.startRunning()
 
                 self.session = captureSession
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+                    guard let self = self else { return }
+                    self.cameraView.layer.addSublayer(self.previewLayer)
+                }
             } catch (let error) {
                 print(error)
             }
