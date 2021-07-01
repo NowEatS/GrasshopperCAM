@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-final class MenuViewController: UIViewController, UICollectionViewDelegate {
+final class MenuViewController: UIViewController {
 
     @IBOutlet var menuContainerView: UIView!
     @IBOutlet var closeButton: UIButton!
@@ -47,7 +47,7 @@ final class MenuViewController: UIViewController, UICollectionViewDelegate {
     }
     
     private func setupUI() {
-        menuContainerView.layer.cornerRadius = 12
+        menuContainerView.layer.cornerRadius = Constant.GHLayer.cornerRadius
     }
     
     private func bind() {
@@ -56,10 +56,14 @@ final class MenuViewController: UIViewController, UICollectionViewDelegate {
                 self?.dismiss(animated: true, completion: nil)
             }
             .disposed(by: disposeBag)
-
     }
+
+}
+
+extension MenuViewController: UICollectionViewDelegate {
     
     // MARK: - UICollectionView 추가
+    
     private func configureHierarchy() {
         collectionView = UICollectionView(frame: collectionViewContainer.bounds, collectionViewLayout: createLayout())
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -69,6 +73,7 @@ final class MenuViewController: UIViewController, UICollectionViewDelegate {
     }
     
     // MARK: - UICollectionViewCompositionalLayout
+    
     private func createLayout() -> UICollectionViewLayout {
         let sectionProvider = { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
             let section: NSCollectionLayoutSection
@@ -80,7 +85,8 @@ final class MenuViewController: UIViewController, UICollectionViewDelegate {
                 section = NSCollectionLayoutSection.list(using: configuration, layoutEnvironment: layoutEnvironment)
             }
             
-            section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+            let inset = Constant.GHCollectionView.sectionContentInset
+            section.contentInsets = NSDirectionalEdgeInsets(top: inset, leading: inset, bottom: inset, trailing: inset)
             
             return section
         }
@@ -89,6 +95,7 @@ final class MenuViewController: UIViewController, UICollectionViewDelegate {
     }
     
     // MARK: - CellRegistration & UICollectionViewDiffableDataSource
+    
     private func configureDataSource() {
         let listCellRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, Item> { (cell, indexPath, item) in
             var contentConfiguration = UIListContentConfiguration.valueCell()
@@ -102,7 +109,7 @@ final class MenuViewController: UIViewController, UICollectionViewDelegate {
             content.text = item.title
             cell.contentConfiguration = content
             cell.accessories = [.outlineDisclosure(options: .init(style: .header))]
-            cell.tintColor = #colorLiteral(red: 0.9687700868, green: 0.5647748113, blue: 0.3741672933, alpha: 1)
+            cell.tintColor = Constant.GHColor.menuDefaultColor
         }
         
         let cellNib = UINib(nibName: "ToggleCollectionViewCell", bundle: nil)
@@ -130,6 +137,7 @@ final class MenuViewController: UIViewController, UICollectionViewDelegate {
     }
     
     // MARK: - NSDiffableDataSourceSnapshot
+    
     private func applyInitialSnapshots() {
         let sections = Section.allCases
         var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
@@ -144,11 +152,11 @@ final class MenuViewController: UIViewController, UICollectionViewDelegate {
                 type = .toggle
             }
             
-            let headerItem = Item(title: String(describing: $0), cellType: type)
-            outlineSnapshot.append([headerItem])
-            outlineSnapshot.append($0.items.map { Item(menuItem: $0) }, to: headerItem)
+            let item = Item(title: String(describing: $0), cellType: type)
+            outlineSnapshot.append([item])
+            outlineSnapshot.append($0.items.map { Item(menuItem: $0) }, to: item)
         }
         dataSource.apply(outlineSnapshot, to: .outline, animatingDifferences: false)
     }
-
+    
 }

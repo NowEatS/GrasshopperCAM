@@ -38,9 +38,6 @@
                                             <constraint firstAttribute="width" constant="100" id="zOD-vT-akp"/>
                                         </constraints>
                                         <state key="normal" image="베짱이"/>
-                                        <connections>
-                                            <action selector="didCaptureButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bkh-Ol-yKm"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJ0-3p-TRp">
                                         <rect key="frame" x="334" y="10" width="70" height="70"/>
@@ -50,13 +47,22 @@
                                         </constraints>
                                         <state key="normal" image="menu"/>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fSh-2P-jZ2">
+                                        <rect key="frame" x="20" y="142" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="a5p-kz-KFs"/>
+                                            <constraint firstAttribute="width" secondItem="fSh-2P-jZ2" secondAttribute="height" multiplier="1:1" id="lwQ-q0-Q9L"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="fSh-2P-jZ2" firstAttribute="centerY" secondItem="4zl-7G-XRi" secondAttribute="centerY" id="2mh-bw-7qE"/>
                                     <constraint firstItem="gJ0-3p-TRp" firstAttribute="top" secondItem="g7K-5r-NMs" secondAttribute="top" constant="10" id="a2f-C5-yg7"/>
                                     <constraint firstItem="4zl-7G-XRi" firstAttribute="centerY" secondItem="g7K-5r-NMs" secondAttribute="centerY" id="mzb-bo-KxF"/>
                                     <constraint firstAttribute="trailing" secondItem="gJ0-3p-TRp" secondAttribute="trailing" constant="10" id="qW5-KS-MkO"/>
                                     <constraint firstItem="4zl-7G-XRi" firstAttribute="centerX" secondItem="g7K-5r-NMs" secondAttribute="centerX" id="tu3-bN-gAr"/>
+                                    <constraint firstItem="fSh-2P-jZ2" firstAttribute="leading" secondItem="g7K-5r-NMs" secondAttribute="leading" constant="20" id="zqm-7Q-YVY"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Qf-h0-03B">
@@ -93,8 +99,10 @@
                     </view>
                     <connections>
                         <outlet property="cameraView" destination="szf-bg-zFY" id="JFT-Lz-cCk"/>
+                        <outlet property="captureButton" destination="4zl-7G-XRi" id="ZUK-w0-xHP"/>
                         <outlet property="lensRotateButton" destination="L7R-sl-1da" id="0RS-ee-HFt"/>
                         <outlet property="menuButton" destination="gJ0-3p-TRp" id="zdk-ae-aGO"/>
+                        <outlet property="previewImageView" destination="fSh-2P-jZ2" id="TB0-ex-r8A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -3,9 +3,8 @@ import UIKit
 struct MenuItem: Hashable {
 
     enum Category: CaseIterable, CustomStringConvertible {
-        case imageSave
-        case alertSave
-        case developer
+        case version
+        case developers
     }
     
     private let identifier = UUID()
@@ -19,21 +18,23 @@ extension MenuItem.Category {
     
     var description: String {
         switch self {
-        case .imageSave: return "이미지 저장 on / off"
-        case .alertSave: return "저장 알림 on / off"
-        case .developer: return "개미들"
+        case .version: return "앱 정보 📱"
+        case .developers: return "개미들 🐜"
         }
     }
     
     var items: [MenuItem] {
         switch self {
-        case .developer:
+        case .version:
+            return [
+                MenuItem(text: "Version", title: "\(Bundle.main.infoDictionary?["CFBundleShortVersionString"] ?? "")", category: self),
+                MenuItem(text: "iOS", title: "\(Bundle.main.infoDictionary?["MinimumOSVersion"] ?? "")", category: self)
+            ]
+        case .developers:
             return [
                 MenuItem(text: "🐸", title: "개굴", category: self),
                 MenuItem(text: "🐻", title: "태웡", category: self)
             ]
-        default:
-            return []
         }
     }
     
